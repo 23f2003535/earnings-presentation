@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Presentation</title>
+
+    <!-- RevealJS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
+
+    <!-- Highlight.js for code syntax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Slide 1 -->
+        <section data-markdown>
+          <textarea data-template>
+# Quarterly Earnings Report  
+### Presented by Technical Consultant  
+📧 **23f2003535@ds.study.iitm.ac.in**
+
+---
+
+## Key Highlights  
+- Revenue growth  
+- Operating margin  
+- Digital transformation updates
+          </textarea>
+        </section>
+
+        <!-- Slide with fragments -->
+        <section>
+          <h2>Quarterly Metrics</h2>
+          <p class="fragment">Revenue ↑ 14%</p>
+          <p class="fragment">Customer Growth ↑ 9%</p>
+          <p class="fragment">Operating Costs ↓ 4%</p>
+
+          <aside class="notes">
+            Discuss the breakdown of performance indicators.
+          </aside>
+        </section>
+
+        <!-- Slide with code highlighting -->
+        <section>
+          <h2>Sample Data Pipeline Code</h2>
+          <pre><code class="language-python">
+import pandas as pd
+
+df = pd.read_csv("revenue.csv")
+df["YoY_Growth"] = df["Current"] / df["Previous"] - 1
+print(df)
+          </code></pre>
+
+          <aside class="notes">
+            Explain how growth metrics are computed.
+          </aside>
+        </section>
+
+        <!-- Slide with math -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Return on Investment (ROI):</p>
+          <p>$$ ROI = \frac{Net\ Profit}{Cost\ of\ Investment} \times 100 $$</p>
+
+          <aside class="notes">
+            ROI is used as a key performance metric.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <script>
+      Reveal.initialize();
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
